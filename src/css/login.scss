@@ -1,0 +1,73 @@
+@import "publc/common";
+
+.login{
+	width: 998px;
+	height: 287px;
+	margin: 20px auto;
+	border-top: 1px dashed #ededed;
+	position: relative;
+	p{
+		width:100px;
+		font-size: 18px;
+		line-height: 18px;
+		display: block;
+		text-align: center;
+		background: white;
+		color: #909090;
+		position: absolute;
+		top: -9px;
+		left: 45%;
+	}
+	.login-wrap{
+		width: 310px;
+		height: 140px;
+		margin: 70px auto 0;
+		position: relative;
+		span{
+			width: 60px;
+			height: 40px;
+			float: left;
+			background: #ededed;
+			text-align: center;
+			font-size: 12px;
+			line-height: 40px;
+			color: #626262;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		input{
+			width: 240px;
+			height: 40px;
+			background: #ededed;
+			border: none;
+			outline-style:none;
+			padding-left: 10px;
+			margin-bottom: 10px;
+		}
+		.forget{
+			color: #626262;
+			font-size: 12px;
+			position: absolute;
+			right: 0;
+			bottom: 62px;
+		}
+		.btn{
+			width: 195px;
+			height: 40px;
+			border: none;
+			background: #87d0e3;
+			color: white;
+			font-size: 14px;
+		}
+		.free{
+			width: 105px;
+			height: 40px;
+			float: right;
+			background: #ededed;
+			color: #626262;
+			text-align: center;
+			line-height: 40px;
+			font-size: 12px;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="/css/login.css">
+		<script type="text/javascript" src="/libs/jquery-3.2.1.js"></script>
+		<script src="/libs/tools.js"></script>
+	</head>
+	<body>
+		<div class="header" id="header"></div>
+		<div class="login">
+			<p>用户登录</p>
+			<div class="login-wrap">
+				<span>用户名</span> <input type="text" placeholder="手机|邮箱" id="username">
+				<span>密 码</span> <input type="password" placeholder="请输入6-20位字符" id="password">
+				<a href="javascript:;" class="forget">忘记密码？</a>
+				<button class="btn" id="btnlo">登 录</button> 
+				<a href="/html/register.html" class="free">免费注册</a>
+			</div>
+		</div>
+		
+		<div class="footer" id="footer"></div>
+		
+		<script type="text/javascript" src="/libs/require.js" data-main="/js/login.js"></script>	
+	</body>
+</html>

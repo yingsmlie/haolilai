@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="../css/carts.css">
+		<script type="text/javascript" src="../libs/jquery-3.2.1.js"></script>
+	</head>
+	<body>
+		<div class="header" id="header"></div>
+		
+		<div class="carts">
+			<div class="carts-wrap">
+				<h4>购物车</h4>
+				<table class="table">
+					<tr>
+						<td>商品名称</td>
+						<td>单价</td>
+						<td>购买数量</td>
+						<td>小计</td>
+						<td>操作</td>
+					</tr>
+					<tr>
+						<td>
+							<dl>
+								<dd><input type="checkbox"></dd>
+								<dt><img src="../img/carts.jpg" alt=""></dt>
+								<dd><p>唯一的爱</p></dd>
+							</dl>
+						</td>
+						<td>￥229.00</td>
+						<td>
+							<a href="javascript">-</a>
+							<input type="text" placeholder="1">
+							<a href="javascript">+</a>
+						</td>
+						<td>￥229.00</td>
+						<td>
+							<button>删除</button>
+						</td>
+					</tr>
+				</table>
+				<a href="javascript:;" class="continue" id="continue">继续购物</a>
+				<div class="chose">
+					<div class="c-left">
+						<p>全选</p>
+						<p>x删除选中商品</p>
+					</div>
+					<div class="c-right">
+						<p>总价:<span>￥229.00</span></p>
+						<a href="javascript:;">下一步</a>
+					</div>
+				</div>
+				<div class="more">
+					<p class="m-p">更多精彩</p>
+					
+					<div class="m-serves">
+						<dl>
+							<dt></dt>
+							<dd>
+								<a href="#">
+									<p>配送包</p>
+									<p>DELIVERY PACKAGE</p>
+								</a>
+							</dd>
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd>
+								<a href="#">
+									<p>店面形象</p>
+									<p>STORE IMAGES</p>
+								</a>
+							</dd>
+							
+						</dl>
+						<dl>
+							<dt></dt>
+							<dd>
+								<a href="#">
+									<p>配送服务</p>
+									<p>DELIVERY SERVICE</p>
+								</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer" id="footer"></div>
+		
+		<script type="text/javascript" src="../libs/require.js" data-main="/js/carts.js"></script>
+	</body>
+</html>
