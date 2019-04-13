@@ -4,6 +4,7 @@ require(["require.config"],function(){
 			constructor () {
 				this.register();
 			}
+			
 			register (){
 				var usernameInput = document.querySelector("#username"),
 				passwordInput = document.querySelector("#password"),
@@ -16,18 +17,12 @@ require(["require.config"],function(){
 					var username = usernameInput.value;
 					var password = passwordInput.value;
 					var readyp = readypInput.value;
-					
-					// tools.ajaxPost("/api/php/register.php",{username,password},function(res){
-						/* $.ajax({
-							   type: "POST",
-							   url: "http://localhost/api/php/register.php",
-							   data: "username="+username +"&password="+password,
-							   success: function(msg){
-								 console.log(JSON.parse(msg));
-							   }
-							}); */
+						
+							//授权
 							if(check.checked){
+								//确认密码
 								if(readyp === password){
+									//获取数据跳转
 									$.ajax({
 										type: "POST",
 										url: "http://localhost/api/php/register.php",
@@ -35,6 +30,11 @@ require(["require.config"],function(){
 										success: function(res){
 											var res = JSON.parse(res);
 												if(res.res_code === 1){
+													let obj = {
+														"username" : username,
+														"password" : password
+													}
+													localStorage.setItem("obj",JSON.stringify(obj));
 													if(confirm(res.res_message + "即将跳转登录页面")){
 														location.href = "/html/login.html";
 													}

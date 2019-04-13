@@ -1,17 +1,8 @@
-	<!DOCTYPE html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<title>好利来</title>
-				<link rel="stylesheet" href="../css/publc/header.css">
-				<script type="text/javascript" src="../libs/jquery-3.2.1.js"></script>
-				<script type="text/javascript" src="../libs/tools.js"></script>
-		</head>
-		<body>
+	
 		<header>
 			<nav>
 				<div class="logo">
-					<a href="#"></a>
+					<a href="../index.html"></a>
 				</div>
 				<div class="dh">
 					
@@ -29,36 +20,37 @@
 							<i class="iconfont icon-xiazai19"></i>
 							<span>北京</span>
 						</li>
-						<li>
+						<li id="tiaozhuan">
 							<i class="iconfont icon-gouwuchekong"></i>
-							<p><span>0</span>件</p>
+							<p><span id="cartnum">0</span>件</p>
 						</li>
 					</ul>
 					
 					<ul>
-						<li><p>All Products</p><a href="#">全部产品</a></li>
+						<li><p>All Products</p><a href="/html/list.html">全部产品</a></li>
 						<li>
 							<p>Cake Series</p>
-							<a href="#">蛋糕系列</a>
-							<ul>
-								<li><a href="#">经典系列</a></li>
-								<li><a href="#">儿童系列</a></li>
-								<li><a href="#">冰淇淋系列</a></li>
-								<li><a href="#">尊爱系列</a></li>
+							<span class="cake" id="cake">蛋糕系列</span>
+							<ul class="cakeshow" id="cakeshow">
+								<li><a href="/html/list.html">经典系列</a></li>
+								<li><a href="/html/list.html">儿童系列</a></li>
+								<li><a href="/html/list.html">冰淇淋系列</a></li>
+								<li><a href="/html/list.html">尊爱系列</a></li>
 							</ul>
 						</li>
-						<li><p>Wagashi</p><a href="#">零食糕点</a></li>
-						<li><p>About Us</p><a href="#">关于我们</a></li>
+						<li><p>Wagashi</p><a href="/html/list.html">零食糕点</a></li>
+						<li><p>About Us</p><a href="javascript:;">关于我们</a></li>
 						<li>
 							<p><span></span>400-700-5999</p>
-							<i class="iconfont icon-search-1-copy"><input type="text" id="search"/></i>
-							<div id="textfind"></div>
+							<i class="iconfont icon-search-1-copy"><input type="text" id="search" /></i>
 						</li>
+						
 					</ul>
+					
+					<div class="textfind" id="textfind">
+						
+					</div>
 				</div>
 			</nav>
 		</header>
 		
-		<script src="/libs/require.js" data-main="/js/common/header.js"></script>
-	</body>
-</html>

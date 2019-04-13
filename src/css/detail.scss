@@ -1,0 +1,133 @@
+@import "./publc/common";
+@import "publc/header";
+@import "publc/footer";
+
+.xiangqing{
+	width: 998px;
+	min-height: 2000px;
+	margin: 10px auto;
+	.merch{
+		width: 998px;
+		height: 486px;
+		display:flex;
+		justify-content: space-between;
+		.big{
+			width: 486px;
+			height: 486px;
+			img{
+				border: 1px solid #dddddd;
+			}
+		}
+		.small{
+			width: 486px;
+			height: 486px;
+			dl{
+				height: 372px;
+				dt{
+					width: 486px;
+					height: 290px;
+					background: url(../img/big1.jpg) no-repeat center center;
+					background-size: 100% 100%;
+				}dd{
+					color: #2093cc;
+				}
+				dd:nth-child(2){
+					font-size: 20px;
+					font-weight: 200;
+					margin-top: 25px;
+					line-height: 20px;
+				}
+				dd:nth-child(3){
+					font-size: 12px;
+					line-height: 12px;
+					padding-top: 10px;
+				}
+				span{
+					float: right;
+					font-size: 15px;
+					margin-top: -15px;
+					color: #2093cc;
+					line-height: 15px;
+				}
+			}
+			.chose{
+				font-size: 12px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				.guige{
+					width: 237px;
+					height: 50px;
+					background: #87d0e3;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					span{
+						color: white;
+						padding-right: 5px;
+					}
+					input{
+						width: 170px;
+						height: 25px;
+						padding-left: 8px;
+						cursor: pointer;
+					}
+				}
+				.btn-cart{
+					width: 237px;
+					height: 50px;
+					border: none;
+					background: #87d0e3;
+					color: white;
+				}
+				.shuliang{
+					width: 237px;
+					height: 50px;
+					background: #87d0e3;
+					display: flex;
+					align-items: center;
+					margin-top: 10px;
+					.shu{
+						color: white;
+						padding-left: 20px;
+						margin-right: 40px;
+					}
+					.eq{
+						width: 27px;
+						height: 27px;
+						line-height: 27px;
+						text-align: center;
+						border: 1px solid white;
+						color: white;
+						cursor: pointer;
+					}
+					.change{
+						width: 27px;
+						height: 27px;
+						display: block;
+						background: white;
+						color: #87d0e3;
+						line-height: 27px;
+						text-align: center;
+						margin: 0 3px;
+					}					
+				}
+				.buy{
+					width: 237px;
+					height: 50px;
+					border: none;
+					background: #87d0e3;
+					color: white;
+					margin-top: 10px;
+				}
+			}
+		}
+	}
+	.in-detail{
+		width: 998px;
+		height: 7308px;
+		background: url(../img/xiangqing.png) no-repeat center center;
+		background-size: 100% 100%;
+		margin-top: 10px;
+	}
+}

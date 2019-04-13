@@ -4,34 +4,37 @@
 		<meta charset="utf-8">
 		<title>好利来</title>
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="libs/swiper/css/swiper.min.css">
+		<link rel="stylesheet" href="icon/font_5n2gd5ybs5g/iconfont.css">
 		<script type="text/javascript" src="libs/jquery-3.2.1.js"></script>
+		<script src="libs/swiper/js/swiper.min.js"></script>
+		
 	</head>
 	<body>
 		
 		<div class="header" id="header"></div>
 		
 		<main>
-			<div class="carousel">
-				<ul>
-					<li><a href="#"><img src="img/home1.jpg" alt=""></a></li>
-					<li><a href="#"><img src="img/home2.jpg" alt=""></a></li>
-					<li><a href="#"><img src="img/home3.jpg" alt=""></a></li>
-					<li><a href="#"><img src="img/home4.jpg" alt=""></a></li>
-				</ul>
-				<a href="#" id="btn-prev">  </a>
-				<a href="#" id="btn-next">  </a>
-				<div class="dian">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><a href="/html/list.html"><img src="img/home1.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="/html/list.html"><img src="img/home2.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="/html/list.html"><img src="img/home3.jpg" alt=""></a></div>
+					<div class="swiper-slide"><a href="/html/list.html"><img src="img/home4.jpg" alt=""></a></div>
 				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination swiper-pagination-red"></div>
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev swiper-button-prev-red"></div>
+				<div class="swiper-button-next "></div>
+			</div>
+				
 			</div>
 			<div class="series">
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>经典系列</p>
 							<p>CLASSIC SERIES</p>
 						</a>
@@ -40,7 +43,7 @@
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>法式系列</p>
 							<p>FRENCH SERIES</p>
 						</a>
@@ -50,7 +53,7 @@
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>冰淇淋系列</p>
 							<p>GELATO SERIES</p>
 						</a>
@@ -59,14 +62,14 @@
 			</div>
 			<div class="video">
 				<img src="img/phone.jpg" alt="">
-				<a href=""></a>
+				<a href="/html/list.html"></a>
 			</div>
 			
 			<div class="serve">
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>配送包</p>
 							<p>DELIVERY PACKAGE</p>
 						</a>
@@ -75,7 +78,7 @@
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>店面形象</p>
 							<p>STORE IMAGES</p>
 						</a>
@@ -85,7 +88,7 @@
 				<dl>
 					<dt></dt>
 					<dd>
-						<a href="#">
+						<a href="/html/list.html">
 							<p>配送服务</p>
 							<p>DELIVERY SERVICE</p>
 						</a>
@@ -95,6 +98,25 @@
 		</main>
 		<div class="footer" id="footer"></div>
 		
+		<script>        
+			  new Swiper ('.swiper-container', {
+				//direction: 'vertical',
+				loop: true,
+				autoplay:true,
+				
+				pagination: {
+					el: '.swiper-pagination',
+					clickable:true
+				},
+					
+					// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+			  }) 
+	</script>
+</body>
 		<script  src="/libs/require.js" data-main="/js/index.js"></script>
 	</body>
 </html>

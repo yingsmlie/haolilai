@@ -19,7 +19,7 @@ gulp.task("html", () => {
       removeEmptyAttributes: true,//删除所有空格作属性值 <input id="" /> ==> <input />
       removeScriptTypeAttributes: false,//删除<script>的type="text/javascript"
       removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
-      minifyJS: true,//压缩页面JS
+      minifyJS: false,//压缩页面JS
       minifyCSS: true//压缩页面CSS 
     }))
     .pipe(gulp.dest("dist"))
@@ -52,6 +52,12 @@ gulp.task("img", () => {
     .pipe(connect.reload());
 })
 
+gulp.task("icon", () => {
+	gulp.src("src/icon/**/*")
+	.pipe(gulp.dest("dist/icon"))
+	.pipe(connect.reload());
+})
+
 gulp.task("server", () => {
   connect.server({
     port: 1901,
@@ -70,4 +76,4 @@ gulp.task("watch", () => {
 })
 
 
-gulp.task("default", ["html", "js", "css", "server", "lib", "img", "watch"]);
+gulp.task("default", ["html", "js", "css", "server", "lib", "img","icon","watch"]);

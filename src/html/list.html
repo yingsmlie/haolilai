@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="/css/list.css">
+		<link rel="stylesheet" href="/icon/font_5n2gd5ybs5g/iconfont.css">
+		<script src="/libs/jquery-3.2.1.js"></script>
+		<script type="text/javascript" src="/libs/require.js" data-main = "/js/list.js"></script>
+	</head>
+	<body>
+		<div id="header"></div>
+		
+		<div class="list" id="catyListcontainer">
+			<!-- <dl>
+				<dt></dt>
+				<dd>
+					<a href="javascript:;">
+						<p>经典系列</p>
+						<p>CLASSIC SERIES</p>
+					</a>
+					<span>￥66.00</span>
+				</dd>
+			</dl> -->
+		</div>
+		
+		
+		<script type="text/html" id="catyList">
+			{{each list item}}
+				<dl>
+				<a href="/html/detail.html?id={{ item.id}}">
+					<dt><img src="{{ item.img}}" alt=""></dt>
+					<dd>
+						<a href="/html/detail.html?id={{ item.id}}">
+							<p>{{ item.title}}</p>
+							<p>{{ item.title}}</p>
+						</a>
+						<span>￥{{ item.price}}</span>
+					</dd>
+					</a>
+				</dl>
+			{{/each}}
+		</script>
+	</body>
+</html>

@@ -39,7 +39,7 @@ header{
 			}
 			
 			.dh-a {
-				width: 103px;
+				width: 110px;
 				height: 50px;
 				display: flex;
 				float: right;
@@ -69,8 +69,8 @@ header{
 			
 			.show{
 				display: none;
-				
 			}
+			ul:nth-child(3) li:nth-child(2){cursor: pointer;}
 			ul:nth-child(4){
 				width: 848px;
 				height: 50px;
@@ -92,9 +92,16 @@ header{
 				}
 				li:nth-child(2){
 					display: block;
-					ul{
+					.cake{
+						cursor: pointer;
+						color: #7dd8f6;
+					}
+					.cakeshow{
 						display: none;
 						background: #ffffff;
+						position: absolute;
+						left: 462px;
+						z-index: 11111;
 						li{
 							border: none;
 							margin-top: 6px;
@@ -107,6 +114,7 @@ header{
 				}
 				li:nth-child(5){
 					border-right: none;
+					position: relative;
 					p{
 						display: flex;
 						justify-content: center;
@@ -122,7 +130,7 @@ header{
 					}
 					
 					i{
-						font-size: 18px;
+						font-size: 18px !important;
 						color: #7dd8f6;
 						display: flex;
 						justify-content: center;
@@ -134,9 +142,24 @@ header{
 						border: none;
 						outline-style:none ;
 					}
+					
 				}
 			}
 		}
-		
+		.textfind{
+			width: 110px;
+			min-height: 25px;
+			position: absolute;
+			right: 172px;
+			font-size: 12px;
+			z-index: 11111;
+			ul{
+				li{
+					padding-top: 10px;
+					padding-left: 20px;
+					color: red;
+				}
+			}
+		}
 	}
 }

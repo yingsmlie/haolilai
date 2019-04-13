@@ -1,8 +1,11 @@
 @import "publc/common";
+@import "publc/header";
+@import "publc/footer";
 
 .carts{
 	width: 100%;
 	height: 627px;
+	margin-bottom:77px;
 	.carts-wrap{
 		width: 998px;
 		height: 646px;
@@ -23,27 +26,96 @@
 		}
 		.table{
 			width: 998px;
-			height: 110px;
+			min-height: 110px;
 			margin: 25px auto 0;
-			border-bottom: 1px solid #d5d5d5;
-			tr:nth-child(1){
+			.guding{
 				height: 27px;
 				background: #ededed;
 				text-align: center;
 				line-height: 27px;
 				font-size: 12px;
 				color: #909090;
-				
+				display: flex;
+				justify-content: space-around;
 			}
-			tr:nth-child(2){
+			p{
+				width: 100px;
+			}
+			p:nth-child(1){
+				width: 230px;
+			}
+			.biao{
+				width: 998px;
 				height: 85px;
-				td{
+				text-align: center;
+				line-height: 85px;
+				display: flex;
+				justify-content: space-around;
+				border-bottom: 1px solid #d5d5d5;
+				font-size: 12px;
+				flex-wrap: wrap;
+				.hdr{
+					display: flex;
+					align-items: center;
+					width:200px;
+					img{
+						width: 65px;
+						height: 65px;
+						margin:10px 7px;
+					}
+				}
+				p{
+					width:100px;
+				}
+				.val{
+					width:100px;
+					display: flex;
+					align-items: center;
+					.deseq{
+						width: 27px;
+						height: 27px;
+						line-height: 27px;
+						text-align: center;
+						
+						cursor: pointer;
+					}
+					.change{
+						width: 27px;
+						height: 27px;
+						display: block;
+						background: white;
+						line-height: 27px;
+						text-align: center;
+						margin: 0 3px;
+						border: none;
+					}
+					.inseq{
+						width: 27px;
+						height: 27px;
+						line-height: 27px;
+						text-align: center;
+						
+						cursor: pointer;
+					}
+				}
+				.del{
+					width: 100px;
+					border: none;
+					background: white;
+					outline: none;
+				}
+			}
+			/* .biao{
+				height: 85px;
+				p{
+					display: block;
 					text-align: center;
 					font-size: 12px;
 					color: #909090;
 					
 				}
-				td:nth-child(1){
+				p:nth-child(1){
+					display: block;
 					height: 85px;
 					line-height: 85px;
 					dl{
@@ -60,19 +132,20 @@
 						}
 					}
 				}
-				td:nth-child(3){
+				p:nth-child(3){
+					display: block;
 					height: 85px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					a{
+					.eq{
 						width: 21px;
 						height: 21px;
 						display: inline-block;
 						border: 1px solid #909090 ;
 						color: black;
 					}
-					input{
+					.change{
 						width: 22px;
 						height: 21px;
 						text-align: center;
@@ -80,7 +153,8 @@
 						margin: 0 10px 0;
 					}
 				}
-				td:nth-child(5){
+				p:nth-child(5){
+					display: block;
 					button{
 						border: none;
 						background: white;
@@ -88,7 +162,7 @@
 						outline-style: none;
 					}
 				}
-			}
+			} */
 		}
 		.continue{
 			float: right;
